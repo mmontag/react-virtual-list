@@ -53,7 +53,7 @@ const VirtualList = (options, mapVirtualToProps = defaultMapToVirtualProps) => (
       // get first and lastItemIndex
       const state = getVisibleItemBounds(list, container, items, itemHeight, itemBuffer);
 
-      if (state === undefined) { return; }
+      if (state == null) { return; }
       
       if (state.firstItemIndex > state.lastItemIndex) { return; }
 
